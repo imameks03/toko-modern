@@ -1,0 +1,13 @@
+package org.example.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/user")
+
+public class UserController {
+    @GetMapping
+    public String getUser() {
+        return "User route OK";
+    }
+}
